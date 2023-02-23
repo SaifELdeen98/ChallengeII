@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+/* fonts */
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(./fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Big shoulders Display';
+    src: url(./fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+main{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 150px;
+    font-size: 15px;
+
+}
+div{
+    color:white;
+    width: 200px;
+    height: 364px;
+    flex-direction: row;
+    text-align: center;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 20px;
+    font-size: small;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+.sedans{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Bright-orange);
+    text-align: center;
+    border-radius: 0.5em 0.5em 0.5em;
+    -webkit-border-radius:0.5em;
+    -moz-border-radius:0.5em;
+    -ms-border-radius:0.5em;
+    -o-border-radius:0.5em;
+}
+.suvs{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Dark-cyan);
+    border-radius: 0.5em;
+    -webkit-border-radius:0.5em;
+    -moz-border-radius:0.5em;
+    -ms-border-radius:0.5em;
+    -o-border-radius:0.5em;
+}
+.luxury{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0.5em 0.5em 0.5em;
+    -webkit-border-radius:0.5em;
+    -moz-border-radius:0.5em;
+    -ms-border-radius:0.5em;
+    -o-border-radius:0.5em;
+}
+p{
+    padding-top:10px;
+    text-align: left;
+    font-size: 0.92em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+div :nth-child(4){
+    display: flex;
+    flex-direction: column-reverse;
+    width:100px;
+    background-color: white;
+    padding:10px;
+    border:2px solid white;
+    border-radius: 0.5em;
+    -webkit-border-radius:0.5em;
+    -moz-border-radius:0.5em;
+    -ms-border-radius:0.5em;
+    -o-border-radius:0.5em;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+img{
+    margin-top: 20px;
+    justify-content: left;
+    margin-right: 70px;
+}
+.sedans :last-child{
+    color: var(--Bright-orange);
+}
+.suvs :last-child{
+    color:var(--Dark-cyan);
+}
+.luxury :last-child{
+    color: var(--Very-dark-cyan);
+}
+@media screen and (max-width:375px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div{
+        width:90%;
+    }
+}
